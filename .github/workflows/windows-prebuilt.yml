@@ -24,6 +24,9 @@ jobs:
       - name: Sync upstream source
         run: npm run sync:upstream
 
+      - name: Apply fork patches
+        run: npm run apply:patches
+
       - name: Install deps without install script
         run: npm install --ignore-scripts
 
